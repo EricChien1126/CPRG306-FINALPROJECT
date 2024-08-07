@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taiwanese Boba Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Taiwanese Boba Shop</h1>
+    </header>
+    <main>
+        <section id="menu">
+            <h2>Menu</h2>
+            <ul id="beverage-list"></ul>
+        </section>
+        <section id="order">
+            <h2>Order Your Boba Tea</h2>
+            <form id="order-form">
+                <label for="beverage">Choose your beverage:</label>
+                <select id="beverage" required></select>
+
+                <label for="size">Choose your size:</label>
+                <select id="size" required>
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select>
+
+                <label for="toppings">Choose your toppings:</label>
+                <select id="toppings" multiple required>
+                    <option value="boba">Boba</option>
+                    <option value="popping boba">Popping Boba</option>
+                    <option value="jelly">Jelly</option>
+                    <option value="pudding">Pudding</option>
+                    <option value="red bean">Red Bean</option>
+                </select>
+
+                <button type="submit">Place Order</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Taiwanese Boba Shop</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
+
